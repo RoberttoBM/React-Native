@@ -3,7 +3,7 @@ import Contacts from './components/contacts';
 
 class App extends Component {
 
-  state = {
+/*   state = {
     contacts: []
   }
 
@@ -14,11 +14,18 @@ class App extends Component {
         this.setState({ contacts: data })
       })
       .catch(console.log)
-  }
+  } */
 
   render() {
     return (
-      <Contacts contacts={this.state.contacts} />
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Roberto BM</h5>
+          <h6 class="card-subtitle mb-2 text-muted">roberto.borjas@vallegrande.edu.pe</h6>
+        </div>
+      </div>
+
+      //<Contacts contacts={this.state.contacts} />
     );
   }
 }
